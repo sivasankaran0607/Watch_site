@@ -17,9 +17,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-                mkdir -p deployment
-                cp watchpage.html deployment/
-                echo "Deployment completed: kia.html copied to deployment folder"
+
+                cp watchpage.html /var/www/html/watchpage.html
+                echo "Deployment completed: kia.html copied to deloyment folder"
                 '''
             }
         }
