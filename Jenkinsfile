@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh '''
 
-                cp watchpage.html /var/www/html/watchpage.html
+                sudo cp watchpage.html /var/www/html/watchpage.html
                 echo "Deployment completed: kia.html copied to deloyment folder"
                 '''
             }
