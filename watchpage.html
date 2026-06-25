@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Watch Showcase</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    header h1 {
+      color: #ffcc00;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #111, #333);
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero img {
+      width: 300px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero button {
+      background-color: #ffcc00;
+      color: #000;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #e6b800;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 0;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      width: 280px;
+      margin: 15px;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin-top: 15px;
+      color: #ffcc00;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Watch World</h1>
+    <nav>
+      <a href="#">Collections</a>
+      <a href="#">Luxury</a>
+      <a href="#">Sports</a>
+      <a href="#">Support</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Timeless Elegance</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Rolex_Submariner.jpg" alt="Luxury Watch">
+    <br>
+    <button onclick="showMessage()">Discover More</button>
+    <p id="message"></p>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Rolex_Submariner.jpg" alt="Rolex Submariner">
+      <h3>Rolex Submariner</h3>
+      <p>Classic diving watch with unmatched durability.</p>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Omega_Speedmaster.jpg" alt="Omega Speedmaster">
+      <h3>Omega Speedmaster</h3>
+      <p>The legendary Moonwatch, built for precision.</p>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Tag_Heuer_Carrera.jpg" alt="Tag Heuer Carrera">
+      <h3>Tag Heuer Carrera</h3>
+      <p>Sporty chronograph with sleek design.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Watch World. All Rights Reserved.
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerText = "⌚ Explore timeless watches that define style!";
+    }
+  </script>
+
+</body>
+</html>
